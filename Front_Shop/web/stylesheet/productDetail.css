@@ -1,0 +1,315 @@
+* {
+    padding: 0;
+    margin: 0;
+  
+    
+    text-decoration: none;
+    list-style: none;
+  
+    transition: all ease .55s;
+  
+  
+  
+  }
+  
+  .wel {
+    background-color: #000000;
+    text-align: center;
+    margin-bottom: 0;
+  
+  }
+  
+  .wel h6 {
+    color: #fcfcfc;
+    font-size: 20px;
+    margin-bottom: 0;
+    padding: 3px;
+  }
+  
+  
+  
+  
+  .topnav {
+    position: relative;
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 100%;
+  
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 10px 14px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+  
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+  
+    color: #000000;
+    font-weight: 700;
+  }
+  
+  
+  
+  /* Centered section inside the top navigation */
+  .topnav-centered a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Right-aligned section inside the top navigation */
+  .topnav-right {
+    justify-content: space-evenly;
+    float: right;
+    right: 0;
+    display: flex;
+    width: 35%;
+    margin-left: 20px;
+  
+  }
+  
+  .topnav-right a {
+    padding: 0;
+  
+  
+  
+  }
+  
+  .topnav-right input {
+    width: 40%;
+    border: none;
+    top: 0;
+    height: fit-content;
+    font-size: 17px;
+    padding: 10px 14px;
+  }
+  
+  .topnav-right button {
+    width: 20%;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    height: fit-content;
+    padding: 10px 14px;
+  
+  }
+  
+  .topnav-right a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+  .example {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+  
+  
+  }
+  
+  
+  
+  /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+  @media screen and (max-width: 600px) {
+  
+    .topnav a,
+    .topnav-right {
+      float: none;
+      display: block;
+    }
+  
+    .topnav-centered a {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+    }
+  }
+  
+  .categories {
+    justify-content: center;
+    margin: auto;
+  }
+  
+  #myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 300;
+  
+  }
+  
+  #myUL li a {
+  
+    /* Prevent double borders */
+    background-color: #fffefe;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+    display: block;
+  }
+  
+  #myUL li a:hover {
+    color: #000000;
+    font-weight: 500;
+  }
+  
+  
+  
+  
+  
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+.sproduct select{
+  display: block;
+}
+
+.product-quantity input:focus{
+  outline: none;
+}
+
+.buy-btn{
+  opacity: 1;
+  transition: 0.3s all;
+  padding: 2px;
+}
+
+.enter-quantity{
+    margin-left: 50px;
+}
+  .productlist{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .card{
+    border: none;
+  }
+  .productlist p {
+    font-size: 15px;
+    margin-bottom: 0;
+    font-family: monospace;
+  }
+  
+  .productlist img {
+    border-radius: 10px;
+    width: 100%;
+    }
+  .product-ratings-list{
+      
+      overflow: scroll;
+  }
+  
+  .title {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+  }
+  
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;  
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 2 rem;
+    color: rgb(0, 0, 0);
+  }
+  
+   a:hover {
+    
+    cursor: pointer;
+  }
+  
+ 
+  
+  
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 5px 13px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border-radius: 10px;
+  }
+  .pagination a.active {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+  .pagination a:hover:not(.active) {
+    background-color: #b0b0b0;
+    border-radius: 10px;
+    font-weight: bolder;
+  }
+  
+  
+  
+  .footer {
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+  }
+  
+  .footer {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .footer {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+  }
+  .footer p{
+    margin: 0;
+  
+  }
+  

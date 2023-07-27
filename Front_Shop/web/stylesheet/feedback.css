@@ -1,0 +1,234 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jun 29, 2023, 9:10:02 PM
+    Author     : dinhd513
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+
+
+    text-decoration: none;
+    list-style: none;
+    transition: all ease .55s;
+
+
+}
+
+.wel {
+    background-color: #000000;
+    text-align: center;
+    margin-bottom: 0;
+
+}
+
+
+.wel h6 {
+    color: #fcfcfc;
+    font-size: 20px;
+    margin-bottom: 0;
+    padding: 3px;
+}
+
+
+
+
+.topnav {
+    position: relative;
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 100%;
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 10px 14px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+
+    color: #000000;
+    font-weight: 700;
+}
+
+
+
+/* Centered section inside the top navigation */
+.topnav-centered a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+    justify-content: right;
+    float: right;
+    right: 0;
+    display: flex;
+    width: 35%;
+    margin-right: 20px;
+
+
+}
+
+.topnav-right a {
+    padding: 0;
+
+
+
+}
+
+
+.topnav-right a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 20px;
+}
+
+.example {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+
+
+}
+
+/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+@media screen and (max-width: 600px) {
+
+    .topnav a,
+    .topnav-right {
+        float: none;
+        display: block;
+    }
+
+    .topnav-centered a {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+}
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.3rem;
+    --stroke: #666;
+    --fill: #ffc73a;
+}
+
+.rating input {
+    appearance: unset;
+}
+
+.rating label {
+    cursor: pointer;
+}
+
+.rating svg {
+    width: 3rem;
+    height: 3rem;
+    overflow: visible;
+    fill: transparent;
+    stroke: var(--stroke);
+    stroke-linejoin: bevel;
+    stroke-dasharray: 12;
+    animation: idle 4s linear infinite;
+    transition: stroke 0.2s, fill 0.5s;
+}
+
+@keyframes idle {
+    from {
+        stroke-dashoffset: 24;
+    }
+}
+
+.rating label:hover svg {
+    stroke: var(--fill);
+}
+
+.rating input:checked ~ label svg {
+    transition: 0s;
+    animation: idle 4s linear infinite, yippee 0.75s backwards;
+    fill: var(--fill);
+    stroke: var(--fill);
+    stroke-opacity: 0;
+    stroke-dasharray: 0;
+    stroke-linejoin: miter;
+    stroke-width: 8px;
+}
+
+@keyframes yippee {
+    0% {
+        transform: scale(1);
+        fill: var(--fill);
+        fill-opacity: 0;
+        stroke-opacity: 1;
+        stroke: var(--stroke);
+        stroke-dasharray: 10;
+        stroke-width: 1px;
+        stroke-linejoin: bevel;
+    }
+
+    30% {
+        transform: scale(0);
+        fill: var(--fill);
+        fill-opacity: 0;
+        stroke-opacity: 1;
+        stroke: var(--stroke);
+        stroke-dasharray: 10;
+        stroke-width: 1px;
+        stroke-linejoin: bevel;
+    }
+
+    30.1% {
+        stroke: var(--fill);
+        stroke-dasharray: 0;
+        stroke-linejoin: miter;
+        stroke-width: 8px;
+    }
+
+    60% {
+        transform: scale(1.2);
+        fill: var(--fill);
+    }
+}
+
+
+/* footer*/
+
+.footer {
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    margin-top: auto;
+}
+.footer p{
+    margin: 0;
+}

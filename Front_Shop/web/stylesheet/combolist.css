@@ -1,0 +1,326 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : May 20, 2023, 5:49:46 PM
+    Author     : Asus
+*/
+
+/* Style the navigation bar */
+/* Add a black background color to the top navigation */
+* {
+    padding: 0;
+    margin: 0;
+  
+    font-family: 'MuseoModerno', cursive;
+    text-decoration: none;
+    list-style: none;
+    transition: all ease .55s;
+  
+  
+  }
+  
+  body{
+      overflow-x: hidden;
+  }
+  
+  .wel {
+  background-color: #000000;
+  text-align: center;
+  margin-bottom: 0;
+
+}
+  
+  
+  .wel h6 {
+  color: #fcfcfc;
+  font-size: 20px;
+  margin-bottom: 0;
+  padding: 3px;
+}
+
+
+
+
+.topnav {
+  position: relative;
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 100%;
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 10px 14px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+
+  color: #000000;
+  font-weight: 700;
+}
+
+
+
+/* Centered section inside the top navigation */
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  justify-content: right;
+  float: right;
+  right: 0;
+  display: flex;
+  width: 35%;
+  margin-right: 20px;
+ 
+
+}
+
+.topnav-right a {
+  padding: 0;
+
+
+
+}
+
+
+.topnav-right a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  margin-top: 10px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+.example {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+
+
+}
+
+/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+@media screen and (max-width: 600px) {
+
+  .topnav a,
+  .topnav-right {
+    float: none;
+    display: block;
+  }
+
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+  .row .ComboName{
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    margin-top: 30px; 
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+    border-right:  1px solid black;
+ }
+ .hotblog{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.blog{
+  width: 30%;
+  padding: 20px;
+}
+
+.blog img {
+  width: 100%;
+  border-radius: 10px;
+
+}
+.blog h3 {
+  width: 100%;
+  font-size: larger;
+  padding-top:10px ;
+}
+
+  .combolist{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  .card{
+    border: 0;
+    margin: 15px;
+    width: 20%;
+    max-width: 25%;
+   
+    text-align: center;
+    padding:0;
+    
+  }
+  .combolist p{
+    font-size: 20px;
+  }
+  .combolist img{
+    border-radius: 10px;
+
+  }
+  .price{
+    font-size: 1rem;
+    text-decoration: line-through;
+    color: rgb(146, 146, 146);
+    margin-right: 10px;
+  }
+  .price-N{
+    font-size: 1.875rem;
+    font-weight: 500;   
+    color: black;
+  }
+  
+
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 5px 13px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border-radius: 10px;
+}
+.pagination a.active {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.pagination a:hover:not(.active) {
+    background-color: #b0b0b0;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+
+
+ 
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 60%;
+    margin: 0 auto;
+}
+  /* .card {
+    border: 0;
+    
+    margin: 0 auto;
+    text-align: center;
+    padding:  10px ;
+    
+  } */
+  
+  .title {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-family: 'Eczar', serif;
+    margin-top: 10PX;
+  }
+  
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+   
+  }
+  
+  a { 
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+    
+  }
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+  /* .card:hover{
+   
+    transform: scale(1.1);
+  } */
+  .card img:hover{
+   
+    transform: scale(1.02);
+  }
+
+  
+  #myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    
+  }
+  
+  #myUL li a {
+    
+     /* Prevent double borders */
+    background-color: #fffefe;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    font-family: 'Eczar', serif;
+
+
+  }
+  
+  #myUL li a:hover:not(.header) {
+    background-color: #2b2b2b;
+  }
+
+
+  .footer {
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+
+ }
+ .footer p{
+    margin: 0;
+ }
+
